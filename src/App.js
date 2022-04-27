@@ -3,7 +3,7 @@ import SingleColor from "./SingleColor";
 
 import Values from "values.js";
 import img from "./color-palette.png";
-let initialList = new Values("#2698b4").all(10);
+let initialList = new Values("#fa8072").all(10);
 initialList.pop();
 function App() {
   const [color, setColor] = useState("");
@@ -41,7 +41,7 @@ function App() {
                 name="color"
                 onChange={(e) => setColor(e.target.value)}
                 value={color}
-                placeholder="Usage: #2698b4,red"
+                placeholder="Usage : #2698b4, lightgreen.."
                 className={`${error ? "error" : null}`}
               />
               <button className="btn" type="submit">
