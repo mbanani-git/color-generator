@@ -29,7 +29,7 @@ function App() {
         <div className="logo-container">
           <img src={img} alt="logo" />
           <h3>
-            <span>Colors </span> Generator
+            <span>Colors </span>Generator
           </h3>
         </div>
         <div className="form-container">

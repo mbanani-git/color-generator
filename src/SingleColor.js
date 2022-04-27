@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-//import rgbToHex from "./utils";
 
 const SingleColor = ({ rgb, weight, type, index, hexColor, m }) => {
   const [hexrgb, setHexrgb] = useState("#");
@@ -30,15 +29,13 @@ const SingleColor = ({ rgb, weight, type, index, hexColor, m }) => {
       clearTimeout(timeout);
     };
   }, [alert]);
-  const copyClipboard = (params) => {
+  const copyClipboard = () => {
     if (navigator.clipboard && window.isSecureContext) {
-      // navigator clipboard api method'
       return navigator.clipboard.writeText(hexColor);
     } else {
-      // text area method
       let textArea = document.createElement("textarea");
       textArea.value = hexColor;
-      // make the textarea out of viewport
+
       textArea.style.position = "fixed";
       textArea.style.left = "-999999px";
       textArea.style.top = "-999999px";
@@ -46,7 +43,6 @@ const SingleColor = ({ rgb, weight, type, index, hexColor, m }) => {
       textArea.focus();
       textArea.select();
       return new Promise((res, rej) => {
-        // here the magic happens
         document.execCommand("copy") ? res() : rej();
         textArea.remove();
       });
@@ -64,8 +60,7 @@ const SingleColor = ({ rgb, weight, type, index, hexColor, m }) => {
       >
         <p className="percent-value">{weight}%</p>
         <p className="color-value">{hexrgb}</p>
-        {/* <p className="color-value">{a}</p>
-        <p className="color-value">{hexColor}</p> */}
+
         {alert && <p className="alert">copied to the clipboard</p>}
       </div>
     </React.Fragment>
