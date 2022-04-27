@@ -4,7 +4,7 @@
 
 ### Live
 
-[live URL](https://github.com/noeldelgado/values.js)
+[live URL](https://mbdev-colorgen.netlify.app/)
 
 #### Values JS
 
