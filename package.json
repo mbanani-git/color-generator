@@ -1,10 +1,10 @@
 {
-  "name": "color-generator",
+  "name": "colors-generator",
   "version": "0.1.0",
   "private": true,
   "author": {
     "name": "mohammed banani",
-    "url": "https://github.com/mbanani-git"
+    "url": "https://thembdev.com"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
