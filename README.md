@@ -4,7 +4,7 @@
 
 ### Live
 
-[live URL](https://mbdev-colorgen.netlify.app/)
+[live URL](https://mbdev-colorgen.netlify.app/) :rocket:
 
 #### Values JS
 
