@@ -1,4 +1,8 @@
-### Preview
+# Color Generator
+
+### generate 20 shades of any color
+
+
 
 ## ![preview](https://mbdev-utils.s3.eu-west-3.amazonaws.com/mbdev-colors-gen.webp)
 
